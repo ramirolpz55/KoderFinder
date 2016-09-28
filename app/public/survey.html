@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- THIS IS THE TITLE TO MY WEB APP  -->
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- LATEST CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME GLYPHICONS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- CHOSEN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <!-- LINK TO MY CSS STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container" id="survey">
+        <h2>Koder Finder Questions</h2>
+        <hr>
+        <h3><strong>Please tell us a <b>little bit</b> about yourself</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" name="" id="name" class="form-control" required>
+        <h4>Please enter a link to any Photo image of yourself. (Required)</h4>
+        <input type="text" name="" id="photo" class="form-control" required>
+        <hr>
+        <h3><strong>Question 1</strong></h3>
+        <h4>You can spend hours arguing that Mac is superior over PC.</h4>
+        <select data-placeholder="" class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>You would rather Kode on a friday than hit the club.</h4>
+        <select data-placeholder="" class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>You Love new gadets.</h4>
+        <select data-placeholder="" class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>You see yourself marrying a Koder.</h4>
+        <select data-placeholder="" class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>You prefer back end dev over front end dev.</h4>
+        <select data-placeholder="" class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 6</strong></h3>
+        <h4>You would stay up 24 hours straight for a Hack-a-thon.</h4>
+        <select data-placeholder="" class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 7</strong></h3>
+        <h4>You are anal about styling your Kode.</h4>
+        <select data-placeholder="" class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 8</strong></h3>
+        <h4>You use a wireless mouse VS. the built in one on your labtop.</h4>
+        <select data-placeholder="" class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 9</strong></h3>
+        <h4>You spend 7+ hours on your computer daily.</h4>
+        <select data-placeholder="" class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3><strong>Question 10</strong></h3>
+        <h4>You are a social person.</h4>
+        <select data-placeholder="" class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" style="background-color:orange"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+        </button>
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                 <a href="/api/friends" class="footer-links" target="_blank">API Friends List</a> |
+                <a href="https://github.com/ramirolpz55/KoderFinder" target="_blank" class="footer-links">Git Hub Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- MODAL -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- MODAL CONTENT-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <!-- MODAL BODY -->
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://pbs.twimg.com/profile_images/558109954561679360/j1f9DiJi.jpeg" alt="">
+                </div>
+                <!-- MODAL FOOTER -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+    //CHOSEN CSS
+    var config = {
+        '.chosen-select': {},
+        '.chosen-select-deselect': {
+            allow_single_deselect: true
+        },
+        '.chosen-select-no-single': {
+            disable_search_threshold: 10
+        },
+        '.chosen-select-no-results': {
+            no_results_text: 'Oops, nothing found!'
+        },
+        '.chosen-select-width': {
+            width: "95%"
+        }
+    }
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+    // CAPTURES THE FORM INPUTS  
+    $("#submit").on("click", function() {
+
+        // VALIDATES THE FORM 
+        function validateForm() {
+            var isValid = true;
+            $('.form-control').each(function() {
+                if ($(this).val() === '')
+                    isValid = false;
+            });
+
+            $('.chosen-select').each(function() {
+
+                if ($(this).val() === "")
+                    isValid = false
+            })
+            return isValid;
+        }
+
+        // IF ALL REQUIRED FIELDS ARE FILLED OUT CORRECTLY
+        if (validateForm() == true) {
+            // THIS CREATES AN OBJECT FOR THE USERS DATA 
+            var userData = {
+                name:    $("#name").val(),
+                photo:   $("#photo").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), 
+                         $("#q4").val(), $("#q5").val(), $("#q6").val(), 
+                         $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),
+                ]
+            }
+
+            // THIS GRABS THE CURRENT URL OF THE SITE 
+            var currentURL = window.location.origin;
+
+            // AJAX POST THE DATA TO THE FRIENDS API 
+            $.post(currentURL + "/api/friends", userData, function(data) {
+
+                // GRABS THE RESULT FORM THE AJAX POST SO THAT THE BEST MATCHS NAME AND PHOTO ARE DISPLAYED.
+
+                $("#matchName").text(data.name);
+                $('#matchImg').attr("src", data.photo);
+
+                // THIS SHOWS THE MODAL WITH THE BEST MATCH.
+                $("#resultsModal").modal('toggle');
+
+                // CLEARS ALL THE INPUT FIELDS IN KODER QUESTIONS
+                $('#name').val("");
+                $('#photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+
+            });
+        } else {
+            alert("Please fill out all the required fields before submitting!");
+        }
+
+            return false;
+    });
+    </script>
+</body>
+
+</html>
