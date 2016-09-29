@@ -130,7 +130,7 @@
         </select>
         <br>
         <br>
-        
+
         <!-- SUBMIT BUTTON -->
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" style="background-color:orange"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
         </button>
@@ -155,7 +155,7 @@
                 <!-- MODAL BODY -->
                 <div class="modal-body">
                     <h2 id="matchName"></h2>
-                    <img id="matchImg" src="https://pbs.twimg.com/profile_images/558109954561679360/j1f9DiJi.jpeg" alt="">
+                    <img id="matchImg" alt="">
                 </div>
                 <!-- MODAL FOOTER -->
                 <div class="modal-footer">
@@ -168,6 +168,7 @@
 
     <script type="text/javascript">
     //CHOSEN CSS
+    $('select, input').attr("required", "required");
     var config = {
         '.chosen-select': {},
         '.chosen-select-deselect': {

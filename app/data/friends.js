@@ -60,6 +60,21 @@ var friendArray = [{
         "4",
         "5"
     ]
+},{
+	name: "Elmer Morales",
+	photo: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/04f/1ab/0750296.jpg",
+	scores: [
+		"2",
+		"3",
+		"1",
+		"5",
+		"5",
+		"4",
+		"2",
+		"1",
+		"2",
+		"5"
+	]
 }];
 
 

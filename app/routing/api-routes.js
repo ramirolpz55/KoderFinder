@@ -6,21 +6,6 @@ var path = require('path');
 //THIS IS THE MODULE THAT EXPORTS ALL ROUTES. 
 module.exports = function(app) {
 
-    // app.get('/', function(req, res) {
-    //     res.sendFile(path.join(__dirname, 'public/home.html'));
-    // });
-    // //survey.html
-    // //-----------
-    // app.get('/survey', function(req, res) {
-    //     res.sendFile(path.join(__dirname, 'public/survey.html'));
-    // });
-
-
-    //ADD THIS BECAUSE DEPLOYED TO HEROKU...............................
-    // var currentURL = window.location.origin;
-    // app.post(currentURL + "/api/friends", function(req, res) {
-    // 	friendArray.push(req.body);
-
 
     //GET REQUEST - THIS RENDERS JSON DATA ON KODER FRIENDS
     app.get('/api/friends', function(req, res) {
@@ -28,8 +13,29 @@ module.exports = function(app) {
         })
         //POST REQUEST = THIS HANDLES DATA FOR SUBMISSION
     app.post('/api/friends', function(req, res) {
+        var compatibleFriend = compatibleMember(req);
         friendArray.push(req.body);
-        res.json(friendArray);
+        res.json(compatibleFriend);
     })
 
 };
+
+function compatibleMember(req) {
+    var matchIndex = 0;
+    var differences = [];
+
+    for (var i = 0; i < friendArray.length; i++) {
+
+        var totalDifference = 0;
+
+        for (var j = 0; j < friendArray[i].scores.length; j++) {
+            totalDifference += Math.abs(req.body.scores[j] - friendArray[i].scores[j]);
+        }
+
+        differences.push(totalDifference);
+
+    }
+
+    matchIndex = differences.indexOf(Math.min.apply(Math, differences));
+    return friendArray[matchIndex];
+}
