@@ -15,6 +15,13 @@ module.exports = function(app) {
     //     res.sendFile(path.join(__dirname, 'public/survey.html'));
     // });
 
+
+    //ADD THIS BECAUSE DEPLOYED TO HEROKU...............................
+    // var currentURL = window.location.origin;
+    // app.post(currentURL + "/api/friends", function(req, res) {
+    // 	friendArray.push(req.body);
+
+
     //GET REQUEST - THIS RENDERS JSON DATA ON KODER FRIENDS
     app.get('/api/friends', function(req, res) {
             res.json(friendArray);
@@ -22,6 +29,7 @@ module.exports = function(app) {
         //POST REQUEST = THIS HANDLES DATA FOR SUBMISSION
     app.post('/api/friends', function(req, res) {
         friendArray.push(req.body);
+        res.json(friendArray);
     })
 
 };
