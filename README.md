@@ -8,6 +8,15 @@ Express handles all the routing.
 
 Check out [the live version of the site](https://koderfinder.herokuapp.com/). 
 
+#Usage 
+
+1. Clone repo
+2. npm install
+3. cd KoderFinder
+4. node server.js
+5. run it locally. Default Port will be PORT 3000 in any browser.
+6. ENJOY! 
+
 #Instruction:
 
 Directory structure Koder Finder:
